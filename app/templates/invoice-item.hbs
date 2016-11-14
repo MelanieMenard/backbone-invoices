@@ -1,0 +1,8 @@
+<tr class="invoices-table-row{{#if paid}} paid{{/if}}">
+  <td><button type="button" class="invoice-toggle-paid">{{#if paid}}Mark as unpaid{{else}}Mark as paid{{/if}}</span></td>
+  <td>{{formattedDate}}</td>
+  <td>{{description}}</td>
+  <td class="table-data-number">{{#unless paid}}£{{amount}}{{/unless}}</td>
+  <td class="table-data-number">{{#if paid}}£{{amount}}{{/if}}</td>
+  <td><button type="button" class="invoice-edit">Edit</button></td>
+</tr>

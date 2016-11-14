@@ -1,0 +1,45 @@
+/*---------------------------------------------------------------------*/
+/*  Table module SASS file
+/*  Guidelines: https://smacss.com/book/type-module
+/*---------------------------------------------------------------------*/
+
+.invoices-control{
+  
+  label {
+    padding: 2px 3px;
+  }
+}
+
+th,
+td {
+  padding: 5px 8px;
+}
+
+.invoices-table {
+  border: 1px solid $brand-dark;
+  width: 100%;
+}
+
+.invoices-table-head {
+  border-bottom: 1px solid $brand-dark;
+  color: $brand-dark;
+  width: 100%;
+}
+
+.invoices-table-row {
+  border-bottom: 1px solid $brand-light;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.table-data-number {
+  text-align: center;
+}
+
+.invoice-toggle-paid,
+.invoice-edit {
+  @include small-button();
+  display: block;
+}
+

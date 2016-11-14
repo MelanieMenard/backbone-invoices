@@ -1,0 +1,33 @@
+<section class="invoice-edit-screen page-content">
+
+  {{#if message}}
+    <div class="error-notice">
+      <p class="error-message">{{message}}</p>
+      <button class="error-close" title ="Close">X</button>
+    </div>
+  {{/if}}
+
+  <form action="/">
+    <label>
+      Date
+      <input class="invoice-date" type="date" value="{{formattedDate}}">
+    </label>
+    <label>
+      Description
+     <input class="invoice-description" type="text" value="{{description}}">
+    </label>
+    <label>
+      Amount
+      <input class="invoice-amount" type="number" value="{{amount}}">
+    </label>
+    <label>
+      Paid 
+      <input class="invoice-paid" type="checkbox" {{#if paid}}checked{{/if}}>
+    </label>
+  </form>
+  <div class="btn-row">
+    <button type="button" class="invoice-edit-submit btn">Update Invoice</button>
+    <button type="button" class="back-home btn">Cancel</button>
+  </div>
+
+</section>

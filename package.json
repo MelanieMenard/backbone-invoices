@@ -1,0 +1,35 @@
+{
+  "name": "DemoInvoicesApp",
+  "description": "Backbone Demo Invoices App webapp",
+  "private": true,
+  "version": "1.0.0",
+  "repository": "",
+  "license": "",
+  "scripts": {
+    "postinstall": "bower install --allow-root",
+    "build": "grunt build",
+  	"start": "node server/index.js"
+  },
+  "devDependencies": {
+    "body-parser": "^1.12.4",
+    "express": "^4.12.3",
+    "serve-static": "^1.9.2",
+    "bower": "1.7.9",
+    "bourbon": "4.2.7",
+    "bourbon-neat": "1.8.0",
+    "grunt": "1.0.1",
+    "grunt-cli": "1.2.0",
+    "grunt-concurrent": "2.3.1",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-concat": "1.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-cssmin": "1.0.2",
+    "grunt-contrib-handlebars": "1.0.0",
+    "grunt-sass": "1.2.1",
+    "handlebars": "4.0.5",
+    "jshint": "2.9.4",
+    "load-grunt-tasks": "3.5.2",
+    "shelljs": "0.7.5",
+    "time-grunt": "1.4.0"  
+  }
+}

@@ -1,0 +1,14 @@
+/*---------------------------------------------------------------------*/
+/*  Button module SASS file
+/*  Guidelines: https://smacss.com/book/type-module
+/*---------------------------------------------------------------------*/
+
+.btn-row {
+  display: block;
+}
+
+.btn {
+  @include standard-button();
+  display: inline-block;
+  cursor: pointer;
+}

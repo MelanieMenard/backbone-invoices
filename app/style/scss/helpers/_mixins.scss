@@ -1,0 +1,38 @@
+/*---------------------------------------------------------------------*/
+/*  Mixins SASS file
+/*  All mixins go there (custom and borrowed from third party libraries)
+/*---------------------------------------------------------------------*/
+
+@mixin input() {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid $white;
+  margin: 20px;
+  @include span-columns(6);
+  @include omega;
+  width: 95%;
+}
+
+@mixin button() {
+  text-align: center; 
+  background-color: $button-background;
+  color: $button-text;
+  &:hover {
+    background-color: $button-hover-background;
+    color: $button-hover-text;
+  }
+}
+
+@mixin standard-button() {
+  @include button();
+  padding: $standard-button-padding;
+  font-size: 24px;
+}
+
+@mixin small-button() {
+  @include button();
+  padding: $small-button-padding;
+  font-size: $standard-text-size;
+}
+

@@ -1,0 +1,61 @@
+/*---------------------------------------------------------------------*/
+/*  SASS variables
+/*  All SASS variables go there except grid settings that go in layout/grid-settings
+/*---------------------------------------------------------------------*/
+
+// Instructions for efficient SASS (for easy change and replace)
+
+// Step 1: define your variables as taken from the designs. Give them easy to understand names.
+
+/* Colours */
+
+$white: #ffffff;
+$gray: #4C4C4C;
+$light-gray: #f0f0f0;
+
+$dark-purple: #492352;
+$purple: #781d59;
+$lavender: #d3d0d4;
+
+$dusty-orange: #f09b32;
+
+$brand-dark: $dark-purple;
+$brand-medium: $purple;
+$brand-light: $lavender;
+
+
+
+// Step 2: map the 'design' variables to context/usage specific variables.
+// That way you can change a colour/padding in one specific context only just by remapping here.
+// if you use the 'design' variables directly in context, you end up with the same trapping of standard CSS
+// where you have have to look at each occurence of a hex colour manually
+// if you want to change the colour for just one element instead of replace it globally.
+
+
+/* Colour Functional Variables */
+
+$button-background: $brand-medium;
+$button-hover-background: $brand-light;
+$button-text: $light-gray;
+$button-hover-text: $brand-dark;
+
+$text-color: $gray;
+$headings-text-color: $brand-medium;
+$links-text-color: $brand-medium;
+
+$input-border-colour: $light-gray;
+
+/* Layout Variables */
+
+$standard-container-padding: 15px;
+$standard-text-margin: 15px;
+
+$standard-text-size: 17px;
+
+/* Component Variables */
+
+$btn-border-style: solid 1px;
+$standard-button-padding: 8px 15px;
+$small-button-padding: 3px 6px;
+
+$alert-colour: $dusty-orange;

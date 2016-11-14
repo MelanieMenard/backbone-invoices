@@ -1,0 +1,33 @@
+<section class="invoice-add-screen page-content">
+
+  {{#if message}}
+    <div class="error-notice">
+      <p class="error-message">{{message}}</p>
+      <button class="error-close" title ="Close">X</button>
+    </div>
+  {{/if}}
+
+  <form action="/">
+    <label>
+      Date
+      <input class="invoice-date" type="date">
+    </label>
+    <label>
+      Description
+      <input class="invoice-description" type="text">
+    </label>
+    <label>
+      Amount
+      <input class="invoice-amount" type="number">
+    </label>
+    <label>
+      Paid
+      <input class="invoice-paid" type="checkbox">
+    </label>
+  </form>
+  <div class="btn-row">
+    <button type="button" class="invoice-add-submit btn">Add Invoice</button>
+    <button type="button" class="back-home btn">Cancel</button>
+  </div>
+
+</section>
